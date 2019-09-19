@@ -1,0 +1,6 @@
+-stworzone w PHP
+-własny serwis autoryzacyjny
+-nieużywa OAuth 2.0 ani websocketów
+-wykorzystuje poczęści gotowe szablony
+-obficie wykorzystuje POST() i headery()
+-raczej spełnia kryteria na ocene 4
