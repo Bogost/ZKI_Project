@@ -7,7 +7,11 @@
 	
 	$log = 0;
 	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+	if (!$conn) {
+		die("Connection to server failed: " . mysqli_connect_error());
+	}
     $conn->query("SET CHARSET utf8");
+	$conn = mysqli_connect( $serwer, $user, $haslo );
 	
 	if( $_POST["act"] == "delete")
 	{

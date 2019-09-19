@@ -1,3 +1,5 @@
+-foldery CREATE zawierają index.php który tworzy bazy danych autentyfikacji i projektu
+
 -stworzone w PHP
 -własny serwis autoryzacyjny
 -nieużywa OAuth 2.0 ani websocketów

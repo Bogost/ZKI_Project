@@ -19,6 +19,9 @@ include 'config.php';
 		header('location: ../Authentification/index.php?' . http_build_query($setget));
 	
 	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+	if (!$conn) {
+		die("Connection to server failed: " . mysqli_connect_error());
+	}
     $conn->query("SET CHARSET utf8");
 ?>
 <!doctype html>

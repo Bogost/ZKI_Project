@@ -2,6 +2,9 @@
 	session_start();
 	include 'config.php';
 	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+	if (!$conn) {
+		die("Connection to server failed: " . mysqli_connect_error());
+	}
 	$conn->query("SET CHARSET utf8");
 	$username = mysqli_real_escape_string($conn, $_POST['username']);
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
